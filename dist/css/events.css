@@ -1,0 +1,20 @@
+.events {
+  padding: 0 3.2rem;
+  background-color: #f4f8fa;
+}
+.event-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.event-item {
+  width: calc(33.333% - 2rem);
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+@media screen and (max-width: 800px) {
+  .event-item {
+    width: calc(50% - 2rem);
+  }
+}

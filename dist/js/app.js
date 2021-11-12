@@ -1,0 +1,48 @@
+const accountBtn = document.querySelector(".account");
+const accountList = document.querySelector(".account-list");
+const languageList = document.querySelector(".languages-list");
+const languageBtn = document.querySelector(".languages");
+accountBtn.addEventListener("click", () => {
+  accountList.classList.add("active");
+});
+document.addEventListener("click", (e) => {
+  if (!accountList.contains(e.target) && !e.target.matches(".account")) {
+    accountList.classList.remove("active");
+  }
+});
+languageBtn.addEventListener("click", () => {
+  languageList.classList.add("active");
+});
+document.addEventListener("click", (e) => {
+  if (!languageList.contains(e.target) && !e.target.matches(".languages")) {
+    languageList.classList.remove("active");
+  }
+});
+
+// Hero
+const heroImages = [
+  "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+  "https://images.unsplash.com/photo-1494905998402-395d579af36f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80",
+  "https://images.unsplash.com/photo-1611016186353-9af58c69a533?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80",
+];
+const imageHero = document.querySelector(".hero-slide");
+function imageHero1() {
+  const heroImageLenth = heroImages.length;
+  imageHero.setAttribute(
+    "src",
+    heroImages[Math.floor(Math.random() * heroImageLenth)]
+  );
+}
+setInterval(() => {
+  clearInterval();
+  imageHero1();
+}, 5000);
+
+// Hero Info
+const heroInfo = document.querySelector(".hero-info");
+(function showHeroText() {
+  setTimeout(() => {
+    heroInfo.style.opacity = "1";
+    heroInfo.style.height = "auto";
+  }, 2000);
+})();

@@ -1,0 +1,289 @@
+@media screen and (max-width: 800px) {
+  /* Section headeing */
+  .section-heading {
+    padding-top: 4rem;
+  }
+  /* Navbar */
+  .account span,
+  .languages span {
+    display: none;
+  }
+  .menu-list {
+    flex-direction: column;
+    background-color: var(--dark-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 25rem;
+    height: 100%;
+    align-items: flex-start;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 999;
+  }
+  .menu-list.isShow {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .menu-items {
+    color: #fff;
+    margin: 2rem;
+  }
+  .header-search {
+    right: 5rem;
+  }
+  .menu-toggle {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    right: 1.6rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .accordion-header {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: thin solid var(--lighter-grey);
+  }
+  .menu-items {
+    margin: 0;
+    width: 100%;
+  }
+  .home-content-list,
+  .vehicles-content-list,
+  .blog-content-list,
+  .page-content-list {
+    background-color: #fff;
+  }
+  .home-contents,
+  .vehicle-contents,
+  .blog-contents,
+  .page-contents {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear;
+  }
+  .home-contents.isActive {
+    height: auto;
+  }
+  .home-content-item:not(:last-child) {
+    border-bottom: thin solid var(--lighter-grey);
+  }
+  .home-content-link,
+  .vehicles-content-item ul li a {
+    color: var(--dark-color);
+    margin: 1rem 2rem;
+    display: inline-block;
+  }
+  .vehicles-content-list {
+    margin-top: 0;
+  }
+  .vehicles-content-item:not(:first-child),
+  .vehicles-content-item img {
+    display: none;
+  }
+  .vehicles {
+    margin-bottom: 3.2rem;
+  }
+  .vehicles-content-item ul li {
+    color: var(--dark-color);
+  }
+  .vehicles-content-item ul li {
+    border-bottom: thin solid var(--lighter-grey);
+  }
+  .vehicle-contents h4 {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 2rem;
+    color: var(--dark-color);
+    background-color: #f3f5fa;
+  }
+  .feature-item img,
+  .blog-content-img {
+    display: none;
+  }
+  .blog-content-feature {
+    display: none;
+  }
+  .category-title {
+    color: var(--dark-color);
+    padding: 2rem;
+    margin: 0;
+  }
+  .category-item {
+    padding-left: 2rem;
+    width: 100%;
+    display: inline-block;
+  }
+  .page-contents {
+    margin-right: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .page-content-link {
+    margin: 0;
+    padding: 2rem;
+  }
+  /* Slider */
+  #prev-btn,
+  #next-btn,
+  #prev-btn2,
+  #next-btn2,
+  #prev-btn3,
+  #next-btn3,
+  #prev-btn4,
+  #next-btn4,
+  #prev-btn5,
+  #next-btn5 {
+    display: none;
+  }
+  .slider-main,
+  .slider-main2,
+  .slider-main3,
+  .slider-main4,
+  .slider-main5 {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .slider-main::-webkit-scrollbar,
+  .slider-main2::-webkit-scrollbar,
+  .slider-main3::-webkit-scrollbar,
+  .slider-main4::-webkit-scrollbar,
+  .slider-main4::-webkit-scrollbar {
+    display: none;
+  }
+  .slider-item,
+  .slider-item2,
+  .slider-item3,
+  .slider-item4,
+  .slider-item5 {
+    width: calc(33.3333% - 1rem + 0.1rem);
+    margin-right: 1rem;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+  /* Events */
+  .events {
+    padding: 0;
+  }
+  /* Promotion info */
+  .promotion-info {
+    top: 1rem;
+    left: 1rem;
+    width: 18rem;
+  }
+  .promotion-title {
+    margin: 1rem;
+  }
+  .promotion-date {
+    padding: 1rem;
+  }
+  /* Dealer */
+  .dealer-info-item {
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 801px) {
+  /* Home items has hover */
+  .home-contents {
+    width: 13rem;
+  }
+  .home-contents,
+  .vehicle-contents,
+  .blog-contents,
+  .page-contents {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    left: 0;
+    top: 3.2rem;
+    text-align: center;
+    will-change: opacity, transform;
+    animation: headerNotifyGrowth 0.4s ease;
+    -webkit-animation: headerNotifyGrowth 0.4s ease;
+    -o-animation: headerNotifyGrowth 0.4s ease;
+    -moz-animation: headerNotifyGrowth 0.4s ease;
+    z-index: 2;
+    display: none;
+  }
+  .home-item-has-hover:hover .home-contents,
+  .vehicle-item-has-hover:hover .vehicle-contents,
+  .blog-item-has-hover:hover .blog-contents,
+  .page-item-has-hover:hover .page-contents {
+    display: block;
+  }
+  .home-content-item {
+    border-bottom: 1px solid var(--lighter-grey);
+  }
+  .home-content-item:hover .home-content-link,
+  .page-content-item:hover .page-content-link {
+    color: var(--primary-color);
+  }
+  .home-content-link {
+    color: var(--dark-color);
+    margin: 0.8rem 2rem;
+    display: block;
+  }
+  /* Vehicles items has hover */
+  .vehicle-contents {
+    width: 136rem;
+    text-align: left;
+    padding: 2rem;
+  }
+  .vehicle-contents h4 {
+    margin-top: 0;
+  }
+  .vehicles-content-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .vehicles-content-item {
+    width: calc(33.3333% - 2rem);
+    position: relative;
+  }
+  .vehicles-content-item ul {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1.4rem 0;
+    left: 2rem;
+    color: #fff;
+  }
+  .vehicles-content-item ul li {
+    margin-bottom: 1rem;
+  }
+  .vehicles-content-item ul li a {
+    color: #fff;
+  }
+  .vehicles-content-item ul li:hover {
+    color: var(--primary-color);
+  }
+  /* Blog items has hover */
+  .blog-contents {
+    width: 85rem;
+  }
+  .blog-content-list {
+    display: flex;
+    padding: 2rem 2rem 0 2rem;
+    justify-content: space-between;
+  }
+  .blog-content-item {
+    width: calc(30% - 2rem);
+    text-align: left;
+  }
+  .blog-content-item:nth-child(2) {
+    width: calc(50% - 2rem);
+  }
+  .blog-content-item:first-child {
+    width: calc(20% - 2rem);
+  }
+  .blog-content-item h3 {
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+}

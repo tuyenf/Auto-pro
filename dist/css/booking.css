@@ -1,0 +1,73 @@
+.booking {
+  margin-top: 8rem;
+}
+.booking-tab-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6.5rem;
+}
+.booking-tab-item {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--lighter-grey);
+  font-weight: 700;
+  font-size: 2.6rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.booking-tab-item-active {
+  color: var(--dark-color);
+  pointer-events: none;
+}
+.booking-content {
+  text-align: center;
+}
+.booking-form {
+  display: none;
+  justify-content: space-between;
+}
+.booking-form-active {
+  display: flex;
+}
+.booking-form-item {
+  width: calc(50% - 2rem);
+}
+.booking-form-item input,
+.booking-form-item select {
+  padding: 1.8rem;
+  margin-bottom: 3rem;
+  outline: none;
+  font-size: 1.4rem;
+  border: thin solid var(--lighter-grey);
+}
+.booking-form-item input::placeholder {
+  color: var(--dark-color);
+}
+.booking-form-item > input {
+  width: 100%;
+}
+.form-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.form-bottom2 {
+  flex-wrap: wrap;
+}
+.form-bottom * {
+  width: calc(50% - 2rem);
+}
+
+.booking-desc {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+}
+.booking-btn {
+  margin-bottom: 5rem;
+  transition: all 0.25s ease;
+}
+.booking-btn:hover {
+  background-color: var(--dark-color) !important;
+  color: #fff !important;
+}

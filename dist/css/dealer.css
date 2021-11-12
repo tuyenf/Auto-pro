@@ -1,0 +1,61 @@
+.dealer {
+  margin-bottom: 6rem;
+}
+.dealer-search {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+.dealer-search * {
+  width: calc(50% - 2rem);
+  height: 4rem;
+  border: thin solid var(--lighter-grey);
+  outline: none;
+}
+.dealer-input {
+  padding: 1.5rem 2rem;
+}
+.dealer-btn {
+  cursor: pointer;
+  background-color: var(--dark-color);
+  color: #fff;
+  font-weight: 700;
+  padding: 0;
+  text-transform: uppercase;
+  border: 0;
+}
+.dealer-map iframe {
+  width: 100%;
+}
+.dealer-info-list {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.dealer-info-item {
+  width: calc(25% - 2rem);
+  background-color: #f4f8fa;
+  border: thin solid var(--lighter-grey);
+  padding: 2rem 2.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.25s ease;
+}
+.dealer-info-item:hover {
+  background-color: var(--primary-color);
+}
+.dealer-info-item:hover i,
+.dealer-info-item:hover span {
+  color: #fff;
+}
+.dealer-info-item i {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+.dealer-info-item span {
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1;
+}
