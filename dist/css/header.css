@@ -16,7 +16,7 @@
   margin: 0 2rem;
 }
 .header-input ::placeholder {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .header-input input {
   border: 1px solid var(--lighter-grey);
@@ -40,12 +40,15 @@
   display: flex;
   justify-content: space-between;
   padding: 0 2rem 1rem 2rem;
+  font-size: 14px;
 }
 .header-input-btn {
   background-color: var(--primary-color);
   padding: 2rem;
   color: #fff;
   display: flex;
+  font-size: 14px;
+  font-weight: 500;
   justify-content: space-between;
 }
 .header-content {
@@ -63,7 +66,7 @@
   width: 42%;
   height: 100%;
   color: var(--grey-color);
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 .header-icon {
   margin-right: 0.2rem;
@@ -94,7 +97,7 @@
   color: var(--primary-color);
 }
 .account-list {
-  bottom: -14.7rem;
+  bottom: -18.7rem;
   width: 17rem;
 }
 .account-list,
@@ -119,8 +122,8 @@
 }
 .languages-list {
   width: 10rem;
-  bottom: -12.2rem;
-  left: 13rem;
+  bottom: -20.1rem;
+  left: 19%;
 }
 .languages-link {
   display: flex;
@@ -154,6 +157,9 @@
   display: flex;
   height: 5rem;
   align-items: center;
+}
+.accordion-header span {
+  font-size: 16px;
 }
 .menu-items {
   cursor: pointer;
@@ -267,7 +273,7 @@
 }
 .hero-info p {
   color: #fff;
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 .hero-info button {
   margin: 0 0.8rem;

@@ -37,7 +37,7 @@
   padding: 1.8rem;
   margin-bottom: 3rem;
   outline: none;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   border: thin solid var(--lighter-grey);
 }
 .booking-form-item input::placeholder {
@@ -60,7 +60,7 @@
 .booking-desc {
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin-bottom: 3rem;
   font-family: "Montserrat", sans-serif;
 }

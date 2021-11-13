@@ -15,10 +15,14 @@
 .dealer-input {
   padding: 1.5rem 2rem;
 }
+.dealer-input::placeholder {
+  font-size: 14px;
+}
 .dealer-btn {
   cursor: pointer;
   background-color: var(--dark-color);
   color: #fff;
+  font-size: 16px;
   font-weight: 700;
   padding: 0;
   text-transform: uppercase;
@@ -50,11 +54,12 @@
   color: #fff;
 }
 .dealer-info-item i {
-  font-size: 2rem;
+  font-size: 2.4rem;
   margin-right: 2rem;
 }
 .dealer-info-item span {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1;
+  font-size: 20px;
 }

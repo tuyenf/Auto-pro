@@ -15,6 +15,10 @@
   .hero-button {
     display: flex;
   }
+  .header-info {
+    width: 35%;
+    font-size: 16px;
+  }
   .hero-info button {
     padding: 0;
   }
@@ -24,10 +28,10 @@
   }
   /* Navbar */
   .account-list {
-    bottom: -13.9rem;
+    bottom: -16.6rem;
   }
   .languages-list {
-    bottom: -11.6rem;
+    bottom: -16rem;
     left: 6.5rem;
   }
   .account span,
@@ -230,6 +234,9 @@
     width: 80%;
     margin-right: 10px;
   }
+  .hero-info p {
+    font-size: 16px;
+  }
   /* New Products */
   .new-products-promotion {
     flex-direction: column;
@@ -268,13 +275,19 @@
     padding-bottom: 0;
   }
   .services-desc {
-    font-size: 14px;
+    font-size: 16px;
   }
   .service-list {
     flex-direction: column;
   }
   .service-item {
     width: 100%;
+  }
+  .service-detail {
+    font-size: 16px;
+  }
+  .service-title {
+    font-size: 20px;
   }
   /* Booking */
   .booking-tab-list {

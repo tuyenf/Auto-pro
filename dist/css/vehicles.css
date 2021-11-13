@@ -6,6 +6,7 @@
 .vehicles-tab-item {
   text-transform: uppercase;
   color: #696969;
+  font-size: 16px;
   font-weight: 600;
   padding: 0 1.4rem;
   position: relative;
@@ -50,7 +51,8 @@
   padding: 0 1rem;
 }
 .vehicles-price {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
   color: #fff;
   padding: 1rem;
   margin: 2rem 0;
@@ -58,7 +60,7 @@
 }
 .vehicles-desc {
   margin: 1.8rem 0;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   line-height: 1.8;
   color: var(--grey-color);
   word-break: break-word;

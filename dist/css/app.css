@@ -24,11 +24,10 @@
 }
 @media screen and (min-width: 801px) {
   .container {
-    max-width: 1200px;
+    max-width: calc(var(--container) + 3.2rem);
     margin: 0 auto;
     padding: 0 3.2rem;
   }
-
 }
 .container {
   padding: 0 3.2rem;
@@ -81,8 +80,8 @@ ul {
   border: 0;
   outline: 0;
   color: #fff;
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 600;
   padding: 0.8rem 2rem;
 }
 .btn:hover {
@@ -98,7 +97,7 @@ ul {
   font-weight: 700;
 }
 .product-name {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--dark-color);
   margin: 1rem 0 00;
 }
@@ -166,7 +165,7 @@ ul {
 .slider-item4,
 .slider-item5 {
   flex-shrink: 0;
-  margin-right: 2rem;
+  margin: 0 1rem;
   width: calc(25% - 2rem);
 }
 #prev-btn,
