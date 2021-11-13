@@ -34,6 +34,9 @@
   .languages span {
     display: none;
   }
+  .header-search.isShow {
+    z-index: -1;
+  }
   .menu-list {
     flex-direction: column;
     background-color: var(--dark-color);
@@ -61,7 +64,7 @@
     left: 0;
     right: unset;
     top: 7.5rem;
-    z-index: 1;
+    z-index: 99;
   }
   .menu-toggle {
     display: block;
