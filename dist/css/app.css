@@ -19,6 +19,9 @@
   max-width: var(--wrapper);
   margin: 0 auto;
 }
+.navigation-button {
+  display: none;
+}
 @media screen and (min-width: 1201px) {
   .container {
     width: var(--container) + 64px;
@@ -207,4 +210,20 @@ ul {
 #next-btn4,
 #next-btn5 {
   right: -3rem;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    padding: 0 10px;
+  }
+  .section-heading {
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    margin: 0;
+  }
+  .btn {
+    font-size: 14px;
+    font-weight: 600;
+    width: 12rem;
+    height: 35px;
+  }
 }

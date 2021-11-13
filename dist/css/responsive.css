@@ -1,9 +1,35 @@
 @media screen and (max-width: 800px) {
-  /* Section headeing */
-  .section-heading {
-    padding-top: 4rem;
+  .scroll-to-top-button {
+    position: fixed;
+    z-index: 99999;
+    top: 45%;
+    opacity: 0.7;
+    cursor: pointer;
+    right: 10px;
+  }
+  .scroll-to-top-button i {
+    color: var(--primary-color);
+    font-size: 50px;
+  }
+  /* Hero */
+  .hero-button {
+    display: flex;
+  }
+  .hero-info button {
+    padding: 0;
+  }
+  .hero-slide {
+    width: auto;
+    height: 60vh;
   }
   /* Navbar */
+  .account-list {
+    bottom: -13.9rem;
+  }
+  .languages-list {
+    bottom: -11.6rem;
+    left: 6.5rem;
+  }
   .account span,
   .languages span {
     display: none;
@@ -32,7 +58,10 @@
     margin: 2rem;
   }
   .header-search {
-    right: 5rem;
+    left: 0;
+    right: unset;
+    top: 7.5rem;
+    z-index: 1;
   }
   .menu-toggle {
     display: block;
@@ -80,6 +109,27 @@
     margin: 1rem 2rem;
     display: inline-block;
   }
+  .vehicle-wrapper-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .vehicles-tab-list {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vehicles-tab-item.vehicles-tab-item-active::after {
+    display: none;
+  }
+  .vehicles-tab-item {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f3f8fa;
+    padding: 2rem;
+    font-size: 16px;
+    border: thin solid var(--lighter-grey);
+  }
   .vehicles-content-list {
     margin-top: 0;
   }
@@ -89,6 +139,10 @@
   }
   .vehicles {
     margin-bottom: 3.2rem;
+  }
+  .vehicles-item {
+    margin-right: 0;
+    margin-left: 0;
   }
   .vehicles-content-item ul li {
     color: var(--dark-color);
@@ -162,12 +216,35 @@
   .slider-item3,
   .slider-item4,
   .slider-item5 {
-    width: calc(33.3333% - 1rem + 0.1rem);
-    margin-right: 1rem;
+    width: calc(100% - 1rem + 0.1rem);
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
-  /* Events */
+  .slider-item2,
+  .slider-item3,
+  .slider-item4,
+  .slider-item5 {
+    width: 80%;
+    margin-right: 10px;
+  }
+  /* New Products */
+  .new-products-promotion {
+    flex-direction: column;
+  }
+  .promotion-left,
+  .promotion-right {
+    width: 100%;
+  }
+  .promotion-left {
+    margin-bottom: 30px;
+  }
+  .promotion-right {
+    margin-left: 0;
+  }
+  /* Event $ News */
+  .event-item {
+    width: 100%;
+  }
   .events {
     padding: 0;
   }
@@ -183,9 +260,107 @@
   .promotion-date {
     padding: 1rem;
   }
+  /* Service */
+  .service-heading {
+    padding-bottom: 0;
+  }
+  .services-desc {
+    font-size: 14px;
+  }
+  .service-list {
+    flex-direction: column;
+  }
+  .service-item {
+    width: 100%;
+  }
+  /* Booking */
+  .booking-tab-list {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .booking-tab-item {
+    margin: 0 0 10px 0;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #f3f8fa;
+    border: thin solid var(--lighter-grey);
+  }
+  .booking-form {
+    flex-direction: column;
+  }
+  .booking-form-item {
+    width: 100%;
+  }
+  .form-bottom * {
+    width: calc(50% - 1rem);
+  }
+  .booking-btn {
+    width: 70%;
+  }
   /* Dealer */
+  .dealer {
+    margin-bottom: 30px;
+  }
+  .dealer-search {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .dealer-search * {
+    width: 100%;
+    margin-bottom: 10px;
+  }
   .dealer-info-item {
     padding: 1rem;
+  }
+  .dealer-info-list {
+    margin-top: 40px;
+    flex-direction: column;
+  }
+  .dealer-info-item {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  .dealer-info-item span {
+    font-size: 16px;
+  }
+  /* Footer */
+  .footer {
+    padding-top: 40px;
+  }
+  .footer-list {
+    flex-direction: column;
+  }
+  .footer-item {
+    width: 100%;
+  }
+  .footer-item h3 {
+    font-size: 20px;
+  }
+  .footer-item a {
+    font-size: 16px;
+  }
+  .newletter-subscribe {
+    justify-content: space-between;
+  }
+  .newletter-subscribe * {
+    height: 100%;
+  }
+  .newletter-subscribe input {
+    width: calc(70% - 10px);
+    margin-right: 10px;
+  }
+  .policy h3 {
+    font-size: 16px;
+  }
+  .policy p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .footer-menu-item a {
+    font-size: 12px;
   }
 }
 @media screen and (min-width: 801px) {
