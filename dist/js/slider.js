@@ -37,6 +37,7 @@ window.addEventListener("load", function () {
   }
 });
 
+
 // BEST SELLER SILDER
 window.addEventListener("load", function () {
   const sliderMain2 = document.querySelector(".slider-main2");

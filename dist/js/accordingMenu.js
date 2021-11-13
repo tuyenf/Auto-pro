@@ -10,7 +10,7 @@ function handleAccordionClick(e) {
   if (!content.classList.contains("isActive")) {
     content.style.height = 0;
   }
-  const icon = e.target.querySelector(".accordion-header i");
+  const icon = e.target.querySelector(".arrow");
   icon.classList.toggle("fa-angle-down");
   icon.classList.toggle("fa-angle-up");
 }
