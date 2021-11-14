@@ -110,27 +110,6 @@
     margin: 1rem 2rem;
     display: inline-block;
   }
-  .vehicle-wrapper-mobile {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  .vehicles-tab-list {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    flex-direction: column;
-    align-items: center;
-  }
-  .vehicles-tab-item.vehicles-tab-item-active::after {
-    display: none;
-  }
-  .vehicles-tab-item {
-    width: 100%;
-    margin-bottom: 10px;
-    background-color: #f3f8fa;
-    padding: 2rem;
-    font-size: 16px;
-    border: thin solid var(--lighter-grey);
-  }
   .vehicles-content-list {
     margin-top: 0;
   }
@@ -141,10 +120,7 @@
   .vehicles {
     margin-bottom: 3.2rem;
   }
-  .vehicles-item {
-    margin-right: 0;
-    margin-left: 0;
-  }
+
   .vehicles-content-item ul li {
     color: var(--dark-color);
   }
@@ -184,49 +160,51 @@
     margin: 0;
     padding: 2rem;
   }
-  /* Slider */
-  #prev-btn,
-  #next-btn,
-  #prev-btn2,
-  #next-btn2,
-  #prev-btn3,
-  #next-btn3,
-  #prev-btn4,
-  #next-btn4,
-  #prev-btn5,
-  #next-btn5 {
+  /* Vehicles Slider */
+  /* .prev,
+  .next {
+    display: none;
+  } */
+  .vehicle-wrapper-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .tab-list {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tab-item.tab-item-active::after {
     display: none;
   }
-  .slider-main,
-  .slider-main2,
-  .slider-main3,
-  .slider-main4,
-  .slider-main5 {
+  .tab-item {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #f3f8fa;
+    padding: 2rem;
+    font-size: 16px;
+    border: thin solid var(--lighter-grey);
+  }
+  /* Slider */
+  #prev-btn,
+  #next-btn {
+    display: none;
+  }
+  .tab-item.active::after {
+    display: none;
+  }
+  .slider-main {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }
-  .slider-main::-webkit-scrollbar,
-  .slider-main2::-webkit-scrollbar,
-  .slider-main3::-webkit-scrollbar,
-  .slider-main4::-webkit-scrollbar,
-  .slider-main4::-webkit-scrollbar {
+  .slider-main::-webkit-scrollbar {
     display: none;
   }
-  .slider-item,
-  .slider-item2,
-  .slider-item3,
-  .slider-item4,
-  .slider-item5 {
+  .slider-item {
     width: calc(100% - 1rem + 0.1rem);
     scroll-snap-align: start;
     scroll-snap-stop: always;
-  }
-  .slider-item2,
-  .slider-item3,
-  .slider-item4,
-  .slider-item5 {
-    width: 80%;
-    margin-right: 10px;
   }
   .hero-info p {
     font-size: 16px;
@@ -306,6 +284,10 @@
   }
   .booking-btn {
     width: 70%;
+  }
+  .form-bottom2 input:last-child,
+  .input-engine-size {
+    width: 100%;
   }
   /* Dealer */
   .dealer {

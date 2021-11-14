@@ -1,9 +1,10 @@
-.vehicles-tab-list {
+.tab-list {
   display: flex;
   justify-content: center;
   margin-bottom: 5rem;
 }
-.vehicles-tab-item {
+
+.tab-item {
   text-transform: uppercase;
   color: #696969;
   font-size: 16px;
@@ -12,11 +13,12 @@
   position: relative;
   cursor: pointer;
 }
-.vehicles-tab-item.vehicles-tab-item-active {
+
+.tab-item.active {
   color: var(--primary-color);
   pointer-events: none;
 }
-.vehicles-tab-item.vehicles-tab-item-active::after {
+.tab-item.active::after {
   content: "";
   position: absolute;
   width: 6rem;
@@ -25,23 +27,37 @@
   left: 1.4rem;
   background-color: var(--primary-color);
 }
-.vehicles-tab-content {
+
+.tab-content {
   display: none;
 }
-.vehicles-tab-content-active {
+
+.tab-content.active {
   display: block;
 }
-.vehicles-list {
-  display: flex;
-  justify-content: space-between;
+
+.slideshow-container {
+  position: relative;
+ 
+}
+.mySlides1,
+.mySlides2,
+.mySlides3,
+.mySlides4 {
+  display: none;
 }
 .vehicles-item {
   cursor: pointer;
-  width: calc(25% - 2rem);
   border: thin solid var(--lighter-grey);
   border-radius: 0.2rem;
   padding-top: 3rem;
+  display: none;
   transition: all 0.2s ease-in;
+  position: relative;
+}
+.tab-wrapper {
+  position: relative;
+  overflow: hidden;
 }
 .vehicles-item:hover {
   border-color: var(--primary-color);
@@ -77,3 +93,33 @@
   display: flex;
   justify-content: space-between;
 }
+.vehicles-image {
+  width: 100%;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  user-select: none;
+}
+.prev i,
+.next i {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+
+

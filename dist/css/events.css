@@ -17,4 +17,7 @@
   .event-item {
     width: calc(50% - 2rem);
   }
+  .event-link {
+    width: 100%;
+  }
 }
