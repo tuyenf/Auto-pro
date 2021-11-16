@@ -36,12 +36,18 @@
 }
 .account,
 .languages {
+  display: flex;
+  align-items: center;
   cursor: pointer;
   position: relative;
 }
 .account span,
 .languages span {
   line-height: 3;
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 4px;
+  font-family: "Montserrat", sans-serif;
 }
 .account:hover,
 .languages:hover {
@@ -109,17 +115,14 @@
   height: 5rem;
   align-items: center;
 }
-.accordion-header * {
-  pointer-events: none;
-}
 .accordion-header span {
-  font-size: 16px;
+  font-size: 12px;
 }
 .menu-items {
   cursor: pointer;
   margin-right: 6rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   font-family: "Montserrat", sans-serif;
   color: var(--dark-color);
   position: relative;
@@ -202,6 +205,8 @@
 .page-content-link {
   color: var(--dark-color);
   display: flex;
+  text-transform: capitalize;
+  font-weight: 500;
   justify-content: space-between;
   margin: 2rem 0;
 }
