@@ -288,7 +288,9 @@
   .booking-btn {
     width: 70%;
   }
-  .input-engine-size {
+  .input-engine-size,
+  .input-preferred-garage,
+  .form-bottom2 input:last-child {
     width: 100%;
   }
   /* Dealer */
