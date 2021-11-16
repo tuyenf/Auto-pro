@@ -10,13 +10,18 @@
   .scroll-to-top-button i {
     color: var(--primary-color);
     font-size: 50px;
+    display: block;
   }
   /* Hero */
   .hero-button {
     display: flex;
+    justify-content: space-between;
+    max-width: 280px;
+    margin: 0 auto;
   }
   .header-info {
     width: 35%;
+    text-align: center;
     font-size: 16px;
   }
   .hero-info button {
