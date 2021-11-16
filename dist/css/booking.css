@@ -56,7 +56,9 @@
 .form-bottom * {
   width: calc(50% - 2rem);
 }
-
+.input-preferred-garage {
+  width: 100%;
+}
 .booking-desc {
   text-transform: uppercase;
   font-weight: 400;

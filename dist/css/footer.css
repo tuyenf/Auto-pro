@@ -94,11 +94,3 @@
   text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-  .footer-list {
-    flex-wrap: wrap;
-  }
-  .footer-item {
-    width: calc(50% - 2rem);
-  }
-}

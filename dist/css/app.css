@@ -168,7 +168,7 @@ ul {
     padding: 0 10px;
   }
   .section-heading {
-    padding-top: 4rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
     margin: 0;
   }
@@ -177,5 +177,9 @@ ul {
     font-weight: 600;
     width: 12rem;
     height: 35px;
+  }
+  #prev-btn,
+  #next-btn {
+    display: none;
   }
 }

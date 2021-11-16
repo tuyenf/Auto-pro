@@ -23,7 +23,7 @@
     padding: 0;
   }
   .hero-slide {
-    width: auto;
+    width: 100%;
     height: 60vh;
   }
   /* Navbar */
@@ -160,11 +160,7 @@
     margin: 0;
     padding: 2rem;
   }
-  /* Vehicles Slider */
-  /* .prev,
-  .next {
-    display: none;
-  } */
+  /* Vehicles */
   .vehicle-wrapper-mobile {
     display: flex;
     flex-direction: column-reverse;
@@ -186,11 +182,11 @@
     font-size: 16px;
     border: thin solid var(--lighter-grey);
   }
-  /* Slider */
-  #prev-btn,
-  #next-btn {
+  .swiper-button-next,
+  .swiper-button-prev {
     display: none;
   }
+  /* Slider */
   .tab-item.active::after {
     display: none;
   }
@@ -212,6 +208,7 @@
   /* New Products */
   .new-products-promotion {
     flex-direction: column;
+    padding-top: 60px;
   }
   .promotion-left,
   .promotion-right {
@@ -243,6 +240,9 @@
     padding: 1rem;
   }
   /* Service */
+  .services {
+    margin-top: 20px;
+  }
   .service-heading {
     padding-bottom: 0;
   }
@@ -262,6 +262,9 @@
     font-size: 20px;
   }
   /* Booking */
+  .booking {
+    margin-top: 60px;
+  }
   .booking-tab-list {
     flex-direction: column;
     margin-bottom: 30px;
@@ -285,7 +288,6 @@
   .booking-btn {
     width: 70%;
   }
-  .form-bottom2 input:last-child,
   .input-engine-size {
     width: 100%;
   }
@@ -324,6 +326,7 @@
   }
   .footer-list {
     flex-direction: column;
+    flex-wrap: wrap;
   }
   .footer-item {
     width: 100%;
@@ -397,10 +400,14 @@
     display: block;
   }
   /* Vehicles items has hover */
+  .vehicles {
+    background-color: #fff;
+  }
   .vehicle-contents {
-    width: 136rem;
+    width: 700px;
     text-align: left;
     padding: 2rem;
+    height: 150px;
   }
   .vehicle-contents h4 {
     margin-top: 0;
@@ -412,6 +419,7 @@
   .vehicles-content-item {
     width: calc(33.3333% - 2rem);
     position: relative;
+    margin-bottom: 20px;
   }
   .vehicles-content-item ul {
     position: absolute;
@@ -425,14 +433,15 @@
     margin-bottom: 1rem;
   }
   .vehicles-content-item ul li a {
+    font-size: 16px;
     color: #fff;
   }
-  .vehicles-content-item ul li:hover {
+  .vehicles-content-item ul li a:hover {
     color: var(--primary-color);
   }
   /* Blog items has hover */
   .blog-contents {
-    width: 85rem;
+    width: 70rem;
   }
   .blog-content-list {
     display: flex;
@@ -440,11 +449,14 @@
     justify-content: space-between;
   }
   .blog-content-item {
+    text-align: left;
+  }
+  .blog-content-item:last-child {
     width: calc(30% - 2rem);
     text-align: left;
   }
   .blog-content-item:nth-child(2) {
-    width: calc(50% - 2rem);
+    width: calc(55% - 2rem);
   }
   .blog-content-item:first-child {
     width: calc(20% - 2rem);

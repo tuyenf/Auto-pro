@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
     integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./dist/css/app.css" />
   <link rel="stylesheet" href="./dist/css/responsive.css" />
   <title>AUTO PRO</title>
@@ -139,7 +140,7 @@
               <h4>By make</h4>
               <ul class="vehicles-content-list">
                 <li class="vehicles-content-item">
-                  <img src="./dist/images/info1.jpg" alt="">
+                  <img src="https://images.unsplash.com/photo-1599912027765-a69c78bfa3aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="">
                   <ul>
                     <li><a href="#">Abath</a></li>
                     <li><a href="#">Abath</a></li>
@@ -152,7 +153,7 @@
                   </ul>
                 </li>
                 <li class="vehicles-content-item">
-                  <img src="./dist/images/info1.jpg" alt="">
+                  <img src="https://images.unsplash.com/photo-1610099610040-ab19f3a5ec35?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="">
                   <ul>
                     <li><a href="#">Abath</a></li>
                     <li><a href="#">Abath</a></li>
@@ -162,11 +163,10 @@
                     <li><a href="#">Abath</a></li>
                     <li><a href="#">Abath</a></li>
                     <li><a href="#">Abath</a></li>
-
                   </ul>
                 </li>
                 <li class="vehicles-content-item">
-                  <img src="./dist/images/info1.jpg" alt="">
+                  <img src="https://images.unsplash.com/photo-1599912027765-a69c78bfa3aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80" alt="">
                   <ul>
                     <li><a href="#">Abath</a></li>
                     <li><a href="#">Abath</a></li>
@@ -455,293 +455,889 @@
     <!-- Our Vehicles -->
     <section class="vehicles">
       <div class="container">
-          <h2 class="section-heading">Our Vehicles</h2>
-          <div class="vehicle-wrapper-mobile ">
-            <div class="tab-list">
-                <div class="tab-item active" data-tab="1">Best Sellers</div>
-                <div class="tab-item" data-tab="2">New Vehicles</div>
-                <div class="tab-item" data-tab="3">Features</div>
-                <div class="tab-item" data-tab="4">Special Offer</div>
-            </div>
-            <div class="tab-wrapper">
-                <ul class="vehicles-list slideshow-container tab-content active" data-tab="1">
-                    <li class="vehicles-item mySlides1">
-                        <a href="#">
-                            <img src="./dist/images/car-1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="vehicles-item mySlides1">
-                        <a href="#">
-                            <img src="./dist/images/xe1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-        
-                    </li>
-                    <li class="vehicles-item mySlides1">
-                        <a href="#">
-                            <img src="./dist/images/xe1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-                    </li>
-                    <a class="prev" onclick="plusSlides(-1, 0)"><i class="fas fa-chevron-circle-left"></i></a>
-                    <a class="next" onclick="plusSlides(1, 0)"><i class="fas fa-chevron-circle-right"></i></a>
-                </ul>
-                <ul class="vehicles-list slideshow-container tab-content" data-tab="2">
-                    <li class="vehicles-item mySlides2">
-                        <a href="#">
-                            <img src="./dist/images/porsche-one.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="vehicles-item mySlides2">
-                        <a href="#">
-                            <img src="./dist/images/porsche-one.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                    </li>
-                    <li class="vehicles-item mySlides2">
-                        <a href="#">
-                            <img src="./dist/images/xe1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-                    </li>
-                    <a class="prev" onclick="plusSlides(-1, 1)"><i class="fas fa-chevron-circle-left"></i></a>
-                    <a class="next" onclick="plusSlides(1, 1)"><i class="fas fa-chevron-circle-right"></i></a>
-                </ul>
-                <ul class="vehicles-list slideshow-container tab-content" data-tab="3">
-                    <li class="vehicles-item mySlides3">
-                        <a href="#">
-                            <img src="./dist/images/cayenman5.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-        
-                    </li>
-                    <li class="vehicles-item mySlides3">
-                        <a href="#">
-                            <img src="./dist/images/xe1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-        
-                    </li>
-                    <li class="vehicles-item mySlides3">
-                        <a href="#">
-                            <img src="./dist/images/xe1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-        
-                    </li>
-                    <a class="prev" onclick="plusSlides(-1, 2)"><i class="fas fa-chevron-circle-left"></i></a>
-                    <a class="next" onclick="plusSlides(1, 2)"><i class="fas fa-chevron-circle-right"></i></a>
-                </ul>
-                <ul class="vehicles-list slideshow-container tab-content" data-tab="4">
-                    <li class="vehicles-item mySlides4">
-                        <a href="#">
-                            <img src="./dist/images/PANAMERA1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-        
-                    </li>
-                    <li class="vehicles-item mySlides4">
-                        <a href="#">
-                            <img src="./dist/images/cayenne1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-        
-                    </li>
-                    <li class="vehicles-item mySlides4">
-                        <a href="#">
-                            <img src="./dist/images/paramela1.png" alt="" class="vehicles-image" />
-                            <div class="vehicles-info">
-                                <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
-                                <h4 class="product-name">Cayenne Models</h4>
-                                <p class="vehicles-desc">
-                                    For price inquires, please contact your official local
-                                    Porsche Dealer For price inquires, please contact your
-                                    official local Porsche Dealer
-                                </p>
-                            </div>
-                            <div class="vehicles-date">
-                                <span>New</span>
-                                <span>2017</span>
-                                <span>Automatic</span>
-                                <span>Black</span>
-                                <span>159 mph</span>
-                            </div>
-                        </a>
-        
-                    </li>
-                    <a class="prev" onclick="plusSlides(-1, 3)"><i class="fas fa-chevron-circle-left"></i></a>
-                    <a class="next" onclick="plusSlides(1, 3)"><i class="fas fa-chevron-circle-right"></i></a>
-                </ul>
+        <h2 class="section-heading">Our Vehicles</h2>
+        <div class="vehicle-wrapper-mobile ">
+          <div class="tab-list">
+            <div class="tab-item active" data-tab="1">Best Sellers</div>
+            <div class="tab-item" data-tab="2">New Vehicles</div>
+            <div class="tab-item" data-tab="3">Features</div>
+            <div class="tab-item" data-tab="4">Special Offer</div>
+          </div>
+          <div class="tab-content active" data-tab="1">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/car-1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenman5.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenne1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/porsche-one.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan3.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/PANAMERA1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/paramela1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/car-1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/xe1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
+          <div class="tab-content" data-tab="2">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/porsche-one.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenne1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan3.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenman5.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/car-1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/paramela1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/PANAMERA1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/xe1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenne1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="tab-content" data-tab="3">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/car-1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/xe1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/porsche-one.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/paramela1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/PANAMERA1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan3.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenne1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenman5.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/car-1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="tab-content" data-tab="4">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenman5.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/cayenne1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/car-1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan3.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/porsche-one.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/PANAMERA1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/car-1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/PANAMERA1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+                <div class="swiper-slide vehicles-item">
+                  <a href="#">
+                    <img src="./dist/images/macan1.png" alt="" class="vehicles-image" />
+                    <div class="vehicles-info">
+                      <div class="vehicles-price">$67,200.00 | MSRP: 85,355$</div>
+                      <h4 class="product-name">Cayenne Models</h4>
+                      <p class="vehicles-desc">
+                        For price inquires, please contact your official local
+                        Porsche Dealer For price inquires, please contact your
+                        official local Porsche Dealer
+                      </p>
+                    </div>
+                    <div class="vehicles-date">
+                      <span>New</span>
+                      <span>2017</span>
+                      <span>Automatic</span>
+                      <span>Black</span>
+                      <span>159 mph</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
       </div>
-  </section>
+    </section>
     <!-- Our Services -->
     <section class="services">
       <div class="service-overlay"></div>
@@ -860,7 +1456,7 @@
                   <option value="cayman">718 cayman</option>
                   <option value="boster">718 boster</option>
                 </select>
-                <input type="text" placeholder="Preferred Garage" />
+                <input type="text" class="input-preferred-garage" placeholder="Preferred Garage" />
               </div>
             </div>
           </form>
@@ -1120,6 +1716,28 @@
   <script src="./dist/js/slider.js"></script>
   <script src="./dist/js/tab.js"></script>
   <script src="./dist/js/accordingMenu.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+      breakpoints: {
+        800: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+          slidesPerGroup: 1,
+        }
+      },
+      loop: true,
+      loopFillGroupWithBlank: true,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+    });
+  </script>
 </body>
 
 </html>

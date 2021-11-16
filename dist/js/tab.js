@@ -1,4 +1,3 @@
-
 // Booking Tab
 const tabBookingItems = document.querySelectorAll(".booking-tab-item");
 const tabBookingContents = document.querySelectorAll(".booking-form");
@@ -17,3 +16,20 @@ function handleTabClick(e) {
     }
   });
 }
+// Vehicle Tab
+const tabItems = document.querySelectorAll(".tab-item");
+const tabContents = document.querySelectorAll(".tab-content");
+[...tabItems].forEach((item) => item.addEventListener("click", handleTabClick));
+
+function handleTabClick(e) {
+  [...tabItems].forEach((item) => item.classList.remove("active"));
+  e.target.classList.add("active");
+  const tabNumber = e.target.dataset.tab;
+  [...tabContents].forEach((item) => {
+    item.classList.remove("active");
+    if (item.getAttribute("data-tab") === tabNumber) {
+      item.classList.add("active");
+    }
+  });
+}
+

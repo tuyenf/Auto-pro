@@ -6,6 +6,7 @@
   position: relative;
   z-index: 2;
   padding-bottom: 2rem;
+  margin-top: 40px;
 }
 .service-overlay {
   position: absolute;
