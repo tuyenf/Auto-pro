@@ -19,18 +19,12 @@
   max-width: var(--wrapper);
   margin: 0 auto;
 }
-.navigation-button {
-  display: none;
-}
 @media screen and (min-width: 801px) {
   .container {
     max-width: calc(var(--container) + 3.2rem);
     margin: 0 auto;
     padding: 0 3.2rem;
   }
-}
-.container {
-  padding: 0 3.2rem;
 }
 *,
 *::before,

@@ -3,21 +3,23 @@ const accountList = document.querySelector(".account-list");
 const languageList = document.querySelector(".languages-list");
 const languageBtn = document.querySelector(".languages");
 accountBtn.addEventListener("click", () => {
-  accountList.classList.add("active");
+  accountList.classList.toggle("active");
+  languageList.classList.remove("active");
 });
-document.addEventListener("click", (e) => {
-  if (!accountList.contains(e.target) && !e.target.matches(".account")) {
-    accountList.classList.remove("active");
-  }
-});
+// document.addEventListener("click", (e) => {
+//   if (!accountList.contains(e.target) && !e.target.matches(".account")) {
+//     accountList.classList.remove("active");
+//   }
+// });
 languageBtn.addEventListener("click", () => {
-  languageList.classList.add("active");
+  languageList.classList.toggle("active");
+  accountList.classList.remove("active");
 });
-document.addEventListener("click", (e) => {
-  if (!languageList.contains(e.target) && !e.target.matches(".languages")) {
-    languageList.classList.remove("active");
-  }
-});
+// document.addEventListener("click", (e) => {
+//   if (!languageList.contains(e.target) && !e.target.matches(".languages")) {
+//     languageList.classList.remove("active");
+//   }
+// });
 
 // Hero
 const heroImages = [
@@ -39,13 +41,13 @@ setInterval(() => {
 }, 5000);
 
 // Hero Info
-const heroInfo = document.querySelector(".hero-info");
-(function showHeroText() {
-  setTimeout(() => {
-    heroInfo.style.opacity = "1";
-    heroInfo.style.height = "auto";
-  }, 2000);
-})();
+// const heroInfo = document.querySelector(".hero-info");
+// (function showHeroText() {
+//   setTimeout(() => {
+//     heroInfo.style.opacity = "1";
+//     heroInfo.style.height = "auto";
+//   }, 2000);
+// })();
 
 // Scroll to top
 const scrollTopBtn = document.querySelector(".scroll-to-top-button");
