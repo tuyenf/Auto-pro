@@ -38,12 +38,17 @@
   }
   /* Navbar */
   .account-list {
-    bottom: -16rem;
-    right: 90px;
+    top: 50px;
+    width: 11rem;
+  }
+  .account-item a {
+    padding-left: 0;
+    padding-right: 0;
   }
   .languages-list {
-    bottom: -14.4rem;
-    right: 3.2;
+    width: 10rem;
+    top: 50px;
+    left: 30px;
   }
   .account span,
   .languages span {
@@ -59,13 +64,13 @@
     width: 25rem;
     height: 100%;
     align-items: flex-start;
-    transform: translate3d(-100%, -20%, 0);
+    transform: translateX(-100%);
     opacity: 0;
     transition: all 0.2s ease-in-out;
     z-index: 999;
   }
   .menu-list.isShow {
-    transform: translate3d(0, 0, 0);
+    transform: translateX(0);
     opacity: 1;
     padding-left: 0;
   }
@@ -174,23 +179,23 @@
   /* Vehicles */
   .vehicle-wrapper-mobile {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .tab-list {
-    margin-top: 30px;
     margin-bottom: 20px;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .tab-item.tab-item-active::after {
     display: none;
   }
   .tab-item {
-    width: 100%;
+    width: calc(50% - 16px);
     margin-bottom: 10px;
     background-color: #f3f8fa;
-    padding: 2rem;
+    padding: 1rem;
     font-size: 16px;
+    text-align: center;
     border: thin solid var(--lighter-grey);
   }
   .swiper-button-next,
