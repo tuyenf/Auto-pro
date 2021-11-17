@@ -379,7 +379,7 @@
 @media screen and (min-width: 801px) {
   /* Home items has hover */
   .home-contents {
-    width: 13rem;
+    width: 14rem;
   }
   .home-contents,
   .vehicle-contents,
@@ -405,6 +405,9 @@
   .page-item-has-hover:hover .page-contents {
     display: block;
   }
+  .menu-items:hover {
+    color: var(--primary-color);
+  }
   .home-content-item {
     border-bottom: 1px solid var(--lighter-grey);
   }
@@ -413,10 +416,11 @@
     color: var(--primary-color);
   }
   .home-content-link {
+    font-family: "Roboto", sans-serif;
     text-transform: capitalize;
     color: var(--dark-color);
-    font-size: 10px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 400;
     margin: 0.8rem 2rem;
     display: block;
   }
@@ -451,24 +455,27 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    padding: 1.4rem 0;
     left: 2rem;
     color: #fff;
+    margin-top: 6px;
   }
   .vehicles-content-item ul li {
     margin-bottom: 1rem;
     text-transform: capitalize;
   }
   .vehicles-content-item ul li a {
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-shadow: 0 0  1px #fff;
   }
   .vehicles-content-item ul li a:hover {
     color: var(--primary-color);
   }
   /* Blog items has hover */
   .blog-contents {
-    width: 45rem;
+    width: 48rem;
   }
   .blog-content-list {
     display: flex;
@@ -479,7 +486,8 @@
     text-align: left;
   }
   .blog-content-item:first-child {
-    width: calc(20% - 2rem);
+    width: 30%;
+    margin-right: 10px;
   }
   .blog-content-item h3 {
     padding-bottom: 1rem;

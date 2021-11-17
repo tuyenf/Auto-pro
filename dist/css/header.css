@@ -161,9 +161,9 @@
 }
 .menu-items {
   cursor: pointer;
-  
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 12px;
   font-family: "Montserrat", sans-serif;
   color: var(--dark-color);
   position: relative;
@@ -199,11 +199,15 @@
 .category-item a {
   color: var(--dark-color);
   padding: 1rem 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  text-transform: capitalize;
+  font-weight: 400;
   display: inline-block;
 }
 /* Feature post */
 .feature-list {
-  padding: 0 2rem;
+  padding-left: 10px;
   border-left: thin solid var(--lighter-grey);
 }
 .feature-title {
@@ -232,12 +236,16 @@
 .feature-item h4 {
   color: var(--dark-color);
   margin-bottom: 0.6rem;
+  margin-top: 0;
+  font-size: 14px;
 }
 .feature-item span,
 .feature-item i {
   color: var(--grey-color);
 }
-
+.feature-link div {
+  margin-left: 10px;
+}
 /* Page items has hover */
 .page-contents {
   width: 18rem;
@@ -250,7 +258,9 @@
   color: var(--dark-color);
   display: flex;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   justify-content: space-between;
   margin: 2rem 0;
 }
