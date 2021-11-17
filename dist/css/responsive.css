@@ -2,7 +2,7 @@
   .scroll-to-top-button {
     position: fixed;
     z-index: 99999;
-    top: 45%;
+    bottom: 10px;
     opacity: 0.7;
     cursor: pointer;
     right: 10px;
