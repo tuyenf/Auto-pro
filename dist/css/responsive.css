@@ -349,11 +349,21 @@
   .footer-item {
     width: 100%;
   }
+  .footer-item + .footer-item {
+    margin-left: 0;
+  }
   .footer-item h3 {
     font-size: 20px;
+    margin: 20px 0 10px 0;
   }
   .footer-item a {
     font-size: 16px;
+  }
+  .footer-newletter {
+    margin-top: 0;
+  }
+  .footer-newletter h3 {
+    margin-bottom: 20px;
   }
   .newletter-subscribe {
     justify-content: space-between;
@@ -365,15 +375,22 @@
     width: calc(70% - 10px);
     margin-right: 10px;
   }
-  .policy h3 {
-    font-size: 16px;
-  }
-  .policy p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
+
   .footer-menu-item a {
     font-size: 12px;
+  }
+  .footer-contact-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-contact-item {
+    flex: 1;
+  }
+  .footer-contact-item + .footer-contact-item {
+    margin: 20px 0 0 0;
+  }
+  .footer-contact-item i {
+    margin-right: 14px;
   }
 }
 @media screen and (min-width: 801px) {
@@ -468,7 +485,7 @@
     color: #fff;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    text-shadow: 0 0  1px #fff;
+    text-shadow: 0 0 1px #fff;
   }
   .vehicles-content-item ul li a:hover {
     color: var(--primary-color);
