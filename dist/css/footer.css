@@ -109,6 +109,9 @@
 .footer-contact-wrapper {
   margin-bottom: 35px;
 }
+.footer-contact-wrapper h3 {
+  font-size: 20px;
+}
 .footer-contact-body {
   display: flex;
   justify-content: space-between;
