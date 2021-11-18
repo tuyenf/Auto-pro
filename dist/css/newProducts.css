@@ -42,3 +42,35 @@
 .promotion-right img {
   height: 100%;
 }
+.slider {
+  position: relative;
+}
+.slider-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+.slider-main {
+  display: flex;
+  position: relative;
+  transition: transform 0.25s linear;
+}
+.slider-item {
+  flex-shrink: 0;
+  width: 20%;
+}
+#prev-btn,
+#next-btn {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  font-size: 4rem;
+  color: rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+#prev-btn {
+  left: -3rem;
+}
+#next-btn {
+  right: -3rem;
+}

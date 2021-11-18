@@ -125,38 +125,6 @@ ul {
   font-family: "Montserrat", sans-serif;
   margin: 0 0.6rem 0 0;
 }
-/* Slider */
-.slider {
-  position: relative;
-}
-.slider-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-.slider-main {
-  display: flex;
-  position: relative;
-  transition: transform 0.25s linear;
-}
-.slider-item {
-  flex-shrink: 0;
-  width: 20%;
-}
-#prev-btn,
-#next-btn {
-  position: absolute;
-  top: 50%;
-  cursor: pointer;
-  transform: translateY(-50%);
-  font-size: 4rem;
-  color: rgba(0, 0, 0, 0.5);
-}
-#prev-btn {
-  left: -3rem;
-}
-#next-btn {
-  right: -3rem;
-}
 @media screen and (max-width: 800px) {
   .container {
     padding: 0 10px;
@@ -171,9 +139,5 @@ ul {
     font-weight: 600;
     width: 12rem;
     height: 35px;
-  }
-  #prev-btn,
-  #next-btn {
-    display: none;
   }
 }
