@@ -372,8 +372,8 @@
     height: 100%;
   }
   .newletter-subscribe input {
-    width: calc(70% - 10px);
     margin-right: 10px;
+    flex-grow: 1;
   }
 
   .footer-menu-item a {
