@@ -41,6 +41,8 @@
   .header-hotline-detail a {
     margin-left: 14px;
     line-height: 25px;
+    font-weight: 400;
+    font-size: 12px;
   }
   .hero {
     height: 65vh;
