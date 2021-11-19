@@ -238,9 +238,9 @@
           </ul>
           <div class="header-info">
             <div class="header-hotline-icon"><i class="fas fa-phone"></i></div>
-           <div class="header-hotline-detail">
-             <a href="tel: 0945673040">0945673040</a>
-           </div>
+            <div class="header-hotline-detail">
+              <a href="tel: 0945673040">0945673040</a>
+            </div>
           </div>
           <i class="fas fa-bars menu-toggle"></i>
           <div class="overlay"></div>
@@ -249,20 +249,31 @@
     </header>
     <!-- Hero -->
     <section class="hero">
-      <img class="hero-slide"
-        src="https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80"
-        alt="" />
-      <!-- <div class="hero-info">
-        <img class="hero-image" src="./dist/images/hero.png" alt="" />
-        <p>
-          See what others paid before you buy or lease form Autopro Certified
-          Dealer
-        </p>
-        <div class="hero-button">
-          <button class="shop-new-btn btn">Shop New</button>
-          <button class="shop-used-btn btn">Shop Used</button>
+      <div class="myHero">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img class="hero-slide"
+              src="https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80"
+              alt="" /></div>
+          <div class="swiper-slide"><img class="hero-slide"
+              src="https://images.unsplash.com/photo-1469285994282-454ceb49e63c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1742&q=80"
+              alt="" /></div>
+          <div class="swiper-slide"><img class="hero-slide"
+              src="https://images.unsplash.com/photo-1444012830796-83db7e1db0d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+              alt="" /></div>
+          <div class="swiper-slide"><img class="hero-slide"
+              src="https://images.unsplash.com/photo-1461638023147-7d732b807d9c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+              alt="" /></div>
+          <div class="swiper-slide"><img class="hero-slide"
+              src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80"
+              alt="" /></div>
+          <div class="swiper-slide"><img class="hero-slide"
+              src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2070&q=80"
+              alt="" /></div>
         </div>
-      </div> -->
+        <div class="swiper-button-next1"><i class="fas fa-chevron-right"></i></div>
+        <div class="swiper-button-prev1"><i class="fas fa-chevron-left"></i></div>
+        <div class="swiper-pagination1"></div>
+      </div>
     </section>
     <!-- New Products -->
     <section class="new-products">
@@ -630,7 +641,7 @@
                 </div>
               </div>
               <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-prev"></i></div>
             </div>
           </div>
           <div class="tab-content" data-tab="2">
@@ -1690,6 +1701,18 @@
   <script src="./dist/js/accordingMenu.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script>
+    // Hero slider
+    var myHero = new Swiper(".myHero", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next1",
+        prevEl: ".swiper-button-prev1",
+      },
+    });
+    // Vehicle slider
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10,
@@ -1704,8 +1727,8 @@
       loop: true,
       loopFillGroupWithBlank: true,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".swiper-button-next1",
+        prevEl: ".swiper-button-prev1",
       },
 
     });

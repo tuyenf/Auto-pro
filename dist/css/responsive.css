@@ -40,13 +40,17 @@
   }
   .header-hotline-detail a {
     margin-left: 14px;
+    line-height: 25px;
   }
-  .hero {
-    height: 60vh;
+  .myHero {
+    height: 65vh;
   }
-  .hero-slide {
-    width: 100%;
+  .swiper-button-next1 {
+    right: 10px;
   }
+.swiper-button-prev1 {
+  left: 10px;
+}
   /* Navbar */
   .account-list {
     top: 50px;
