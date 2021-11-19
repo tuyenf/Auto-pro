@@ -1,26 +1,3 @@
-const accountBtn = document.querySelector(".account");
-const accountList = document.querySelector(".account-list");
-const languageList = document.querySelector(".languages-list");
-const languageBtn = document.querySelector(".languages");
-accountBtn.addEventListener("click", () => {
-  accountList.classList.toggle("active");
-  languageList.classList.remove("active");
-});
-// document.addEventListener("click", (e) => {
-//   if (!accountList.contains(e.target) && !e.target.matches(".account")) {
-//     accountList.classList.remove("active");
-//   }
-// });
-languageBtn.addEventListener("click", () => {
-  languageList.classList.toggle("active");
-  accountList.classList.remove("active");
-});
-// document.addEventListener("click", (e) => {
-//   if (!languageList.contains(e.target) && !e.target.matches(".languages")) {
-//     languageList.classList.remove("active");
-//   }
-// });
-
 // Hero
 const heroImages = [
   "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
