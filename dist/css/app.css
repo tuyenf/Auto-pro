@@ -7,10 +7,10 @@
 @import url(./dealer.css);
 @import url(./footer.css);
 :root {
-  --primary-color: #ff5c2d;
-  --dark-color: #111111;
-  --grey-color: #999999;
-  --lighter-grey: #cccccc;
+  --background-color: #f3eddf;
+  --heading-color: #c63b26;
+  --text-color: #1E1E1E;
+  --primary-color: #EA5B41;
   --wrapper: 1920px;
   --container: 1200px;
   --mobile-width: 800px;
@@ -41,6 +41,7 @@ body {
   padding: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  background-image: linear-gradient(#fff,var(--background-color));
 }
 h1,
 h2,
@@ -77,22 +78,28 @@ ul {
   font-size: 1.6rem;
   font-weight: 600;
   padding: 0.8rem 2rem;
+  transition: opacity 0.2s ease;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 .btn:hover {
-  background-color: #fff;
-  color: var(--dark-color);
+  opacity: 0.8;
 }
 .section-heading {
   text-transform: uppercase;
   text-align: center;
-  color: var(--dark-color);
-  font-size: 2.6rem;
+  color: var(--heading-color);
+  font-size: 3rem;
   padding: 8rem 0 4rem;
   font-weight: 700;
+  text-shadow: 0 22px 1px rgba(198, 59, 38, 0.1);
 }
 .product-name {
   font-size: 1.8rem;
-  color: var(--dark-color);
+  color: var(--text-color);
   margin: 1rem 0 00;
 }
 .promotion-info {
@@ -107,7 +114,7 @@ ul {
   margin: 2.5rem 2rem 2rem;
   font-size: 1.6rem;
   line-height: 1.4;
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 .promotion-date {
   background-color: var(--primary-color);
@@ -115,9 +122,14 @@ ul {
   color: #fff;
   display: flex;
   align-items: center;
+  transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -ms-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
 }
 .promotion-date:hover {
-  background-color: var(--dark-color);
+  opacity: 0.8;
 }
 .promotion-date p {
   font-size: 1.4rem;

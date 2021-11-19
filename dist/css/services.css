@@ -18,24 +18,29 @@
   z-index: -1;
 }
 .service-heading {
-  color: #fff !important;
+  color: var(--background-color) !important;
   margin-bottom: 1.5rem !important;
   padding-top: 5rem;
   padding-bottom: 10px !important;
+  text-shadow: 0 22px 1px rgba(243, 237, 223, 0.1) !important;
 }
 .services-desc {
-  color: #fff;
+  color: var(--background-color);
+  font-weight: 300;
+  font-style: italic;
   text-align: center;
   margin: 0 0 45px 0;
   font-size: 2rem;
+  text-shadow: 0 0px 1px #fff;
 }
 .service-list {
-  color: #fff;
   display: flex;
   flex-wrap: wrap;
   margin-top: 4rem;
   justify-content: space-between;
   align-items: stretch;
+  color: var(--background-color);
+  text-shadow: 0 0px 1px #fff;
 }
 .service-item {
   width: calc(33.333% - 2rem);

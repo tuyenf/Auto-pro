@@ -38,13 +38,14 @@
 
 .vehicles-item {
   cursor: pointer;
-  border: thin solid var(--lighter-grey);
+  border: thin solid var(--primary-color);
   border-radius: 0.2rem;
   padding-top: 3rem;
   position: relative;
+  background-image: linear-gradient(#fff, var(--background-color));
 }
 .vehicles-item:hover {
-  border-color: var(--primary-color);
+  border: thin solid var(--text-color);
 }
 .vehicles-info {
   text-align: center;
@@ -53,16 +54,24 @@
 .vehicles-price {
   font-size: 1.4rem;
   font-weight: 500;
-  color: #fff;
+  color: var(--background-color);
   padding: 1rem;
   margin: 2rem 0;
   background-color: var(--primary-color);
+  transition: background-color 0.2s ease;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -ms-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+}
+.vehicles-item:hover .vehicles-price {
+  background-color: var(--text-color);
 }
 .vehicles-desc {
   margin: 1.8rem 0;
   font-size: 1.4rem;
   line-height: 1.8;
-  color: var(--grey-color);
+  color: var(--text-color);
   word-break: break-word;
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -71,13 +80,22 @@
   text-overflow: ellipsis;
 }
 .vehicles-date {
-  background-color: #f4f8fa;
-  color: var(--grey-color);
+  border-top: 1px solid var(--primary-color);
+  color: var(--primary-color);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
+  transition: all 0.25s ease;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
 }
-.vehicles-date  span {
+.vehicles-item:hover .vehicles-date {
+  border-color: var(--text-color);
+  color: var(--text-color);
+}
+.vehicles-date span {
   font-size: 13px;
 }
 .vehicles-image {
@@ -88,7 +106,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   height: 40px;
   width: 40px;
-  border-radius:50%;
+  border-radius: 50%;
 }
 .swiper-button-prev {
   left: 0;
@@ -107,7 +125,3 @@
   transform: translateY(-50%);
   user-select: none;
 }
-
-
-
-

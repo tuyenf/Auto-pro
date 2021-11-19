@@ -73,7 +73,7 @@
   }
   .menu-list {
     flex-direction: column;
-    background-color: var(--dark-color);
+    background-color: var(--background-color);
     position: fixed;
     left: 0;
     top: 0;
@@ -92,7 +92,10 @@
     padding-left: 0;
   }
   .menu-items {
-    color: #fff;
+    margin: 0;
+    width: 100%;
+    color: var(--text-color);
+    font-weight: 600;
   }
   .menu-toggle {
     display: block;
@@ -101,6 +104,7 @@
     right: 1.6rem;
     top: 50%;
     transform: translateY(-50%);
+    color: var(--background-color);
   }
   .accordion-header {
     padding: 2rem;
@@ -108,14 +112,10 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
-    border-bottom: thin solid var(--lighter-grey);
+    border-bottom: thin solid #ccc;
   }
   .accordion-header * {
     pointer-events: none;
-  }
-  .menu-items {
-    margin: 0;
-    width: 100%;
   }
   .home-content-list,
   .vehicles-content-list,
@@ -155,17 +155,15 @@
   }
 
   .vehicles-content-item ul li {
-    color: var(--dark-color);
+    color: var(--text-color);
   }
-  .vehicles-content-item ul li {
-    border-bottom: thin solid var(--lighter-grey);
-  }
+  
   .vehicle-contents h4 {
     margin-bottom: 0;
     margin-top: 0;
     padding: 2rem;
-    color: var(--dark-color);
-    background-color: #f3f5fa;
+    color: var(--text-color);
+    background-color: var(--background-color);
   }
   .feature-item img,
   .blog-content-img {
@@ -175,7 +173,7 @@
     display: none;
   }
   .category-title {
-    color: var(--dark-color);
+    color: var(--text-color);
     padding: 2rem;
     margin: 0;
   }
@@ -209,11 +207,12 @@
   .tab-item {
     width: calc(50% - 16px);
     margin-bottom: 10px;
-    background-color: #f3f8fa;
+    background-color: var(--text-color);
     padding: 1rem;
-    font-size: 16px;
+    font-size: 15px;
     text-align: center;
-    border: thin solid var(--lighter-grey);
+    color: #fff;
+    font-weight: 500;
   }
   /* Slider */
   .tab-item.active::after {
@@ -299,9 +298,13 @@
     margin: 0 0 10px 0;
     padding: 10px;
     font-size: 20px;
-    background-color: #f3f8fa;
-    border: thin solid var(--lighter-grey);
-  }
+    border-radius: 2px;
+    border: thin solid var(--text-color);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
   .booking-form {
     flex-direction: column;
   }
@@ -436,7 +439,8 @@
     color: var(--primary-color);
   }
   .home-content-item {
-    border-bottom: 1px solid var(--lighter-grey);
+    color: var(--text-color);
+    border-bottom: 1px solid #ccc;
   }
   .home-content-item:hover .home-content-link,
   .page-content-item:hover .page-content-link {
@@ -458,9 +462,6 @@
     pointer-events: none;
   }
   /* Vehicles items has hover */
-  .vehicles {
-    background-color: #fff;
-  }
   .vehicle-contents {
     width: 500px;
     text-align: left;

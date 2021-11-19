@@ -1,5 +1,5 @@
 .footer {
-  background-color: #22282e;
+  background-color: var(--text-color);
   color: #fff;
   padding-top: 10rem;
 }
@@ -26,6 +26,7 @@
   text-transform: uppercase;
   font-size: 1.8rem;
   flex: 1;
+  color: var(--primary-color);
 }
 .footer-item-last {
   flex: 1;
@@ -34,7 +35,7 @@
   align-items: space-between;
 }
 .footer-item a {
-  color: #fff;
+  color: var(--background-color);
   font-size: 1.6rem;
   line-height: 2.4;
 }
@@ -61,8 +62,7 @@
   transition: all 0.25s ease;
 }
 .newletter-subscribe-btn:hover {
-  background-color: var(--dark-color) !important;
-  color: #fff !important;
+  opacity: 0.9;
 }
 
 .footer-bottom {
@@ -78,6 +78,7 @@
 .social-item {
   margin: 0 0.8rem;
   font-size: 2.4rem;
+  color: var(--background-color);
 }
 .social-item:hover,
 .footer-menu-item a:hover,
@@ -94,15 +95,15 @@
   justify-content: center;
 }
 .footer-menu-item a {
-  color: #fff;
+  color: var(--background-color);
   margin: 0 0.8rem;
   font-weight: 400;
   font-size: 1.6rem;
 }
 .copyright {
-  background-color: #293037;
+  background-color: #272626;
   padding: 2.5rem 0;
-  color: #fff;
+  color: var(--background-color);
   font-size: 1.4rem;
   text-align: center;
 }
@@ -116,7 +117,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: thin solid #fff;
+  border: thin solid var(--primary-color);
   border-radius: 2px;
   padding: 20px 10px;
 }
@@ -141,7 +142,7 @@
 }
 .footer-contact-detail {
   font-size: 16px;
-  color: #fff;
+  color: var(--background-color);
 }
 .scroll-to-top-button i {
   display: none;

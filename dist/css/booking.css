@@ -9,14 +9,14 @@
 .booking-tab-item {
   text-transform: uppercase;
   text-align: center;
-  color: var(--lighter-grey);
+  color: var(--text-color);
   font-weight: 700;
   font-size: 2.6rem;
   margin-right: 3rem;
   cursor: pointer;
 }
 .booking-tab-item-active {
-  color: var(--dark-color);
+  color: var(--heading-color);
   pointer-events: none;
 }
 .booking-content {
@@ -38,10 +38,14 @@
   margin-bottom: 3rem;
   outline: none;
   font-size: 1.6rem;
-  border: thin solid var(--lighter-grey);
+  border: thin solid transparent;
+}
+.booking-form-item input:focus,
+.booking-form-item select:focus {
+  border-color:  var(--text-color);
 }
 .booking-form-item input::placeholder {
-  color: var(--dark-color);
+  color: var(--text-color);
 }
 .booking-form-item > input {
   width: 100%;
@@ -60,6 +64,7 @@
   width: 100%;
 }
 .booking-desc {
+  color: var(--text-color);
   text-transform: uppercase;
   font-weight: 400;
   font-size: 1.6rem;
@@ -70,7 +75,4 @@
   margin-bottom: 5rem;
   transition: all 0.25s ease;
 }
-.booking-btn:hover {
-  background-color: var(--dark-color) !important;
-  color: #fff !important;
-}
+

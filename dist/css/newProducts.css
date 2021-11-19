@@ -12,11 +12,11 @@
   transform: translateX(-4%);
 }
 .new-product-price {
-  color: var(--grey-color);
+  color: var(--text-color);
   font-size: 1.4rem;
 }
 .new-product-price span {
-  color: var(--primary-color);
+  color: var(--heading-color);
 }
 .new-products-promotion {
   display: flex;

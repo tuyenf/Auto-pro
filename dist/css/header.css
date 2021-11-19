@@ -1,10 +1,11 @@
 .header {
-  border-bottom: thin solid var(--lighter-grey);
+  border-bottom: thin solid var(--background-color);
   width: 100%;
-  background-color: #fff;
+  background-color: var(--text-color);
   position: fixed;
   z-index: 99;
   left: 0;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .header-content {
   height: 7.5rem;
@@ -23,7 +24,7 @@
   font-size: 2rem;
   color: var(--grey-color);
   position: relative;
-  border: 3px solid var(--grey-color);
+  border: 3px solid var(--background-color);
   border-top-right-radius: 30px;
   border-bottom-right-radius: 30px;
   cursor: pointer;
@@ -43,7 +44,7 @@
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  border: 3px solid var(--grey-color);
+  border: 3px solid var(--background-color);
   position: absolute;
   left: 0;
   transform: translateX(-50%);
@@ -60,7 +61,7 @@
   padding: 0 10px;
 }
 .header-hotline-detail a {
-  color: #333;
+  color: var(--background-color);
   line-height: 37.5px;
   display: block;
   font-size: 16px;
@@ -78,7 +79,7 @@
   color: var(--primary-color);
 }
 .header-logo span:last-child {
-  color: var(--dark-color);
+  color: var(--background-color);
 }
 .overlay {
   position: fixed;
@@ -125,7 +126,7 @@
   font-weight: 700;
   font-size: 12px;
   font-family: "Montserrat", sans-serif;
-  color: var(--dark-color);
+  color: var(--background-color);
   position: relative;
 }
 .menu-items:not(:last-child) {
@@ -141,6 +142,7 @@
   background-color: transparent;
 }
 .menu-items i {
+  color: var(--background-color);
   font-size: 0.8rem;
   margin-left: 0.2rem;
 }
@@ -151,13 +153,13 @@
 /* Category */
 .category-title,
 .category-item {
-  border-bottom: thin solid var(--lighter-grey);
+  border-bottom: thin solid #ccc;
 }
 .category-item a:hover {
   color: var(--primary-color);
 }
 .category-item a {
-  color: var(--dark-color);
+  color: var(--text-color);
   padding: 1rem 0;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -168,7 +170,7 @@
 /* Feature post */
 .feature-list {
   padding-left: 10px;
-  border-left: thin solid var(--lighter-grey);
+  border-left: thin solid #ccc;
 }
 .feature-title {
   padding-left: 2rem;
@@ -194,14 +196,14 @@
   color: var(--primary-color);
 }
 .feature-item h4 {
-  color: var(--dark-color);
+  color: var(--text-color);
   margin-bottom: 0.6rem;
   margin-top: 0;
   font-size: 14px;
 }
 .feature-item span,
 .feature-item i {
-  color: var(--grey-color);
+  color: #888;
 }
 .feature-link div {
   margin-left: 10px;
@@ -212,10 +214,10 @@
   padding: 0 2rem;
 }
 .page-content-item:not(:last-child) {
-  border-bottom: thin solid var(--lighter-grey);
+  border-bottom: thin solid #ccc;
 }
 .page-content-link {
-  color: var(--dark-color);
+  color: var(--text-color);
   display: flex;
   text-transform: capitalize;
   font-weight: 400;
@@ -230,20 +232,23 @@
   position: relative;
   height: 100vh;
 }
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
 .myHero {
   position: relative;
-  height: 100%;
-}
-
-.swiper {
-  width: 100%;
   height: 100%;
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -264,6 +269,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 .swiper-button-next1,
 .swiper-button-prev1,
 .swiper-button-next2,

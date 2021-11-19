@@ -8,7 +8,7 @@
 }
 .dealer-search * {
   width: calc(50% - 2rem);
-  height: 4rem;
+  height: 55px;
   border: thin solid var(--lighter-grey);
   outline: none;
 }
@@ -18,15 +18,26 @@
 .dealer-input::placeholder {
   font-size: 14px;
 }
+.dealer-input:focus {
+  border: thin solid var(--text-color);
+}
 .dealer-btn {
   cursor: pointer;
-  background-color: var(--dark-color);
-  color: #fff;
+  background-color: var(--text-color);
+  color: var(--background-color);
   font-size: 16px;
   font-weight: 700;
   padding: 0;
   text-transform: uppercase;
   border: 0;
+  transition: opacity 0.2s ease;
+  -webkit-transition: opacity 0.2s ease;
+  -moz-transition: opacity 0.2s ease;
+  -ms-transition: opacity 0.2s ease;
+  -o-transition: opacity 0.2s ease;
+}
+.dealer-btn:hover {
+  opacity: 0.9;
 }
 .dealer-map iframe {
   width: 100%;
@@ -38,13 +49,19 @@
 }
 .dealer-info-item {
   width: calc(25% - 2rem);
-  background-color: #f4f8fa;
-  border: thin solid var(--lighter-grey);
+  border-radius: 2px;
+  border: thin solid var(--text-color);
   padding: 2rem 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.25s ease;
+  color: var(--heading-color);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
 }
 .dealer-info-item:hover {
   background-color: var(--primary-color);
