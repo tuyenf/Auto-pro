@@ -23,27 +23,29 @@
     margin: 0 auto;
   }
   .header-info {
-    margin-right: 40px;
-    font-size: 12px;
+    margin-right: 50px;
     height: 50%;
     justify-content: flex-start;
-    border-width: 2px;
   }
   .header-hotline-icon {
-    height: 30px;
-    width: 30px;
-    border-width: 2px;
+    height: 26px;
+    width: 26px;
+    border-width: 1px;
+    font-size: 12px;
+  }
+  .header-hotline-detail {
+    display: none;
   }
   .header-hotline-icon,
   .header-hotline-detail {
     padding: 0 4px;
   }
-  .header-hotline-detail a {
+  /* .header-hotline-detail a {
     margin-left: 14px;
     line-height: 25px;
     font-weight: 400;
     font-size: 12px;
-  }
+  } */
   .hero {
     height: 65vh;
   }
