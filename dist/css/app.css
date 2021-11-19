@@ -8,7 +8,6 @@
 @import url(./footer.css);
 :root {
   --background-color: #E8E8E8;
-  --heading-color: #c63b26;
   --text-color: #1E1E1E;
   --primary-color: #EB0A1E;
   --wrapper: 1920px;
@@ -91,7 +90,7 @@ ul {
 .section-heading {
   text-transform: uppercase;
   text-align: center;
-  color: var(--heading-color);
+  color: var(--primary-color);
   font-size: 3rem;
   padding: 8rem 0 4rem;
   font-weight: 700;

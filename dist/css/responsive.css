@@ -248,6 +248,7 @@
   /* Event $ News */
   .event-item {
     width: 100%;
+    height: auto;
   }
   .events {
     padding: 0;
@@ -279,6 +280,9 @@
   }
   .service-item {
     width: 100%;
+  }
+  .service-item i {
+    font-size: 38px;
   }
   .service-detail {
     font-size: 16px;

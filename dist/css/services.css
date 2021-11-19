@@ -40,7 +40,6 @@
   justify-content: space-between;
   align-items: stretch;
   color: var(--background-color);
-  text-shadow: 0 0px 1px #fff;
 }
 .service-item {
   width: calc(33.333% - 2rem);
@@ -48,8 +47,9 @@
   margin-bottom: 3rem;
   font-size: 1.2rem;
 }
-.service-item img {
-  height: 40px;
+.service-item i {
+  font-size: 40px;
+  color: var(--primary-color);
   flex-shrink: 0;
 }
 .service-content {
@@ -62,6 +62,7 @@
   font-weight: 400;
   font-size: 22px;
   font-family: "Montserrat", sans-serif;
+  text-shadow: 0 0px 1px #fff;
 }
 .service-detail {
   line-height: 1.4;
@@ -70,4 +71,5 @@
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  text-shadow: 0 0px 1px #fff;
 }
