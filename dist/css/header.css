@@ -45,11 +45,10 @@
   padding: 0 10px;
 }
 .header-hotline-detail a {
-  color:var(--dark-color);
+  color: var(--dark-color);
   line-height: 1;
   display: inline-block;
 }
-
 
 .header-logo span {
   font-size: 2.4rem;
@@ -137,7 +136,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
-  transform: opacity .25s ease;
+  transform: opacity 0.25s ease;
   display: none;
 }
 .overlay.isShow {
@@ -285,5 +284,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-
