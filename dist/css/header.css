@@ -265,13 +265,15 @@
   object-fit: cover;
 }
 .swiper-button-next1,
-.swiper-button-prev1 {
+.swiper-button-prev1,
+.swiper-button-next2,
+.swiper-button-prev2 {
   background-color: rgba(0, 0, 0, 0.3);
   height: 40px;
   width: 40px;
   border-radius:50%;
   position: absolute;
-  top: calc(50% + 25px);
+  top: 50%;
   transform: translateY(-50%);
   z-index: 999999;
   display: flex;
@@ -282,11 +284,14 @@
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
 }
-.swiper-button-next1 {
+.swiper-button-next1,
+.swiper-button-next2 {
   right: 0;
 }
 .swiper-button-next1 i,
-.swiper-button-prev1 i {
+.swiper-button-prev1 i,
+.swiper-button-next2 i,
+.swiper-button-prev2 i {
 font-size: 24px;
 color: #eee;
 }
