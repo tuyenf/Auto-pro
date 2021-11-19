@@ -27,10 +27,19 @@
     font-size: 12px;
     height: 50%;
     justify-content: flex-start;
+    border-width: 2px;
+  }
+  .header-hotline-icon {
+    height: 30px;
+    width: 30px;
+    border-width: 2px;
   }
   .header-hotline-icon,
   .header-hotline-detail {
     padding: 0 4px;
+  }
+  .header-hotline-detail a {
+    margin-left: 14px;
   }
   .hero {
     height: 60vh;

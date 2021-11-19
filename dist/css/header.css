@@ -19,35 +19,51 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  height: 60%;
+  height: 50%;
   font-size: 2rem;
   color: var(--grey-color);
   position: relative;
-  border: thin solid #333;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  border: 3px solid var(--grey-color);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
   cursor: pointer;
+  position: relative;
 }
 .header-hotline-icon {
   color: #fff;
-  background-color: #333;
+  background-color: var(--primary-color);
   height: 100%;
+  width: 45px;
+  height: 45px;
   display: flex;
   align-items: center;
-  border-top-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-  padding: 0 10px;
+  border-radius: 50%;
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border: 3px solid var(--grey-color);
+  position: absolute;
+  left: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  display: flex;
+}
+.header-hotline-icon i {
+  margin: 0 auto;
 }
 .header-hotline-detail {
   padding: 0 10px;
 }
 .header-hotline-detail a {
-  color: var(--dark-color);
+  color: #333;
   line-height: 1;
-  display: inline-block;
+  display: block;
+  margin-left: 20px;
 }
 
 .header-logo span {
