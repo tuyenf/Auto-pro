@@ -24,11 +24,13 @@
   }
   .header-info {
     margin-right: 40px;
-    font-size: 14px;
+    font-size: 12px;
+    height: 50%;
     justify-content: flex-start;
   }
-  .hero-info button {
-    padding: 0;
+  .header-hotline-icon,
+  .header-hotline-detail {
+    padding: 0 4px;
   }
   .hero {
     height: 60vh;
@@ -204,9 +206,6 @@
   }
   .slider-item {
     width: 100%;
-  }
-  .hero-info p {
-    font-size: 16px;
   }
   #prev-btn {
     left: 0;
